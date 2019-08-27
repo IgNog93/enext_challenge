@@ -1,0 +1,100 @@
+@import "variables";
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: $main-light-gray;
+    
+    padding: 50px 0px;
+}
+
+.info-area {   
+    p{
+        margin: 60px 0px 0px 40px;
+    }
+}
+
+.navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+
+    li{
+        margin-right: 30px;
+        color: $main-red-orange;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.social-medias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+    p{
+        margin-top: 50px;
+    }
+
+    li{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+
+        background-color: $main-purple;
+        color: #FFFFFF;
+
+        i{
+            font-size: 20px;
+        }
+    }
+}
+
+.signature-area{
+    background-color: #FFFFFF;
+    height: 150px;
+    width: 375px;
+    
+    margin-right: 40px;
+    padding: 0px 40px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+
+    font-weight: bold;
+
+    form{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: end;
+        width: 100%;
+
+        input{
+            height: 30px;
+            width: 250px;
+            border-radius: 5px;
+            border: solid 1px lightgrey;
+        }
+
+        button{
+            background-color: $main-red-orange;
+            color: #FFFFFF;
+
+            height: 34px;
+            width: 100px;
+            margin-left: 10px;
+            
+            border-radius: 5px;
+            border: 0px;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,7 +1,43 @@
 @import "variables";
 
 .products-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 50px 0px;
+    
+    ul{
+        display: inline-grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 0px 40px;
+    }
+
     strong{
         margin-left: 40px;
     }
+}
+
+.product-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{
+        width: 200px;
+        height: 200px;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.product-price {
+    color: $main-red-orange;
+    margin-left: 5px;
+    font-weight: bold 
 }

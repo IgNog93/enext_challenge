@@ -5,6 +5,8 @@ body{
     justify-content: center;
     align-content: center;
     margin: 0%;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .content{
@@ -14,3 +16,13 @@ body{
 ul li {
     list-style-type: none;
 }
+
+input {
+    padding-left: 20px;
+}
+
+::placeholder { 
+    color: gray;
+    opacity: .75;
+    font-size: 14px;
+  }
