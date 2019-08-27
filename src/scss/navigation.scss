@@ -1,0 +1,26 @@
+@import "variables";
+
+.navigation-area{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 15%;
+    background-color: $main-purple;
+    color: #FFFFFF;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            margin: 0px 20px;
+            font-style: italic;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.sign-btn{
+    margin-left: 20%;
+}

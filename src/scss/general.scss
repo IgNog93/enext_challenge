@@ -1,0 +1,16 @@
+@import "variables";
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0%;
+}
+
+.content{
+    width: 1240px;
+}
+
+ul li {
+    list-style-type: none;
+}

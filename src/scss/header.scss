@@ -1,0 +1,28 @@
+@import "variables";
+
+.main-logo{
+    background-image: url('images/logo-desktop.jpg');
+
+    img{
+        width: 200px;
+        height: 50px;
+    }
+}
+
+.header-desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+.cart-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    figure{
+        margin: 15px;
+    }
+}
+
