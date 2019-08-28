@@ -56,6 +56,14 @@
 }
 
 .cart-counter{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
     text-transform: uppercase;
     color: gray;
+}
+
+.cart-counter-on{
+    display: flex;
 }

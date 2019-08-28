@@ -13,8 +13,15 @@ body{
     width: 1240px;
 }
 
-ul li {
+button, ul li {
     list-style-type: none;
+    cursor: pointer;
+}
+
+button:hover, ul li:hover{
+    transition: 0.3s ease;
+    background-color: rgba(0,0,0,0.1);
+    opacity: 0.8;
 }
 
 input {
@@ -25,4 +32,4 @@ input {
     color: gray;
     opacity: .75;
     font-size: 14px;
-  }
+}

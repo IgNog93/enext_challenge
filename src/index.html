@@ -7,126 +7,147 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <title>Merlin's Potions</title>
 </head>
 <body>
     <div class="content">
-    <header class="header-desktop">
-        <figure class="main-logo"><img src="../images/logo-desktop.jpg"></figure>
-        <div class="search-field">
-                <span class="fa fa-search"></span><input type="text" placeholder="Search our stock">
-        </div>
-        <div class="cart-area">
-            <em><strong>Free shipping</strong><br>on orders over $50</em>
-            <figure><img src="../images/cart-icon.png"></figure>
-            <div class="cart-counter">
-            <strong>bag:<span></span></strong>
+        <header class="header-desktop">
+            <figure class="main-logo">
+                <img src="../images/logo-desktop.jpg">
+            </figure>
+            <div class="search-field">
+                <span class="fa fa-search"></span>
+                <input type="text" placeholder="Search our stock">
             </div>
-        </div>
-    </header>
-    <section class="navigation-area">
-        <ul>
-            <li>potions</li>
-            <li>ingredients</li>
-            <li>books</li>
-            <li>supplies</li>
-            <li>charms</li>
-            <li id="clearance-btn">clearance!</li>
-        </ul>
-        <div class="sign-btn">
-            <em>Sign In</em><span> or </span><em>Sign Up</em>
-        </div>
-    </section>
-    <section class="products-area">
-        <strong>Potions</strong>
-        <ul>
-            <li>
-                <figure class="product-box">
-                    <img src="images/aging-potion.png">
-                    <div>
-                        <strong class="product-name">Aging Potion -</strong>
-                        <p class="product-price"> $29.99</p>
-                    </div>
-                </figure>
-            </li>
-            <li>
-                <figure class="product-box">
-                    <img src="images/aging-potion.png">
-                    <div>
-                        <strong class="product-name">Aging Potion -</strong>
-                        <p class="product-price"> $29.99</p>
-                    </div>
-                </figure>
-            </li>
-            <li>
-                <figure class="product-box">
-                    <img src="images/aging-potion.png">
-                    <div>
-                        <strong class="product-name">Aging Potion -</strong>
-                        <p class="product-price"> $29.99</p>
-                    </div>
-                </figure>
-            </li>
-            <li>
-                <figure class="product-box">
-                    <img src="images/aging-potion.png">
-                    <div>
-                        <strong class="product-name">Aging Potion -</strong>
-                        <p class="product-price"> $29.99</p>
-                    </div>
-                </figure>
-            </li>
-            <li>
-                <figure class="product-box">
-                    <img src="images/aging-potion.png">
-                    <div>
-                        <strong class="product-name">Aging Potion -</strong>
-                        <p class="product-price"> $29.99</p>
-                    </div>
-                </figure>
-            </li>
-            <li>
-                <figure class="product-box">
-                    <img src="images/aging-potion.png">
-                    <div>
-                        <strong class="product-name">Aging Potion -</strong>
-                        <p class="product-price"> $29.99</p>
-                    </div>
-                </figure>
-            </li>
-        </ul>
-    </section>
-    <footer>
-        <section class="info-area">
-            <ul class="navigation-links">
-                <li>company</li>
-                <li>contact us</li>
-                <li>shipping</li>
-                <li>returns</li>
-                <li>careers</li>
+            <div class="cart-area">
+                <em><strong>Free shipping</strong><br>on orders over $50</em>
+                <div class="cart-counter">
+                    <figure>
+                        <img src="../images/cart-icon.png">
+                    </figure>
+                    <strong>bag:<span id="cart-items-qty"></span></strong>
+                </div>
+            </div>
+        </header>
+        <section class="navigation-area">
+            <ul>
+                <li>potions</li>
+                <li>ingredients</li>
+                <li>books</li>
+                <li>supplies</li>
+                <li>charms</li>
+                <li id="clearance-btn">clearance!</li>
             </ul>
-            <ul class="social-medias">
-                <li><i class="fa fa-facebook"></i></li>
-                <li><i class="fa fa-twitter"></i></li>
-                <li><i class="fa fa-pinterest"></i></li>
-                <li><i class="fa fa-tumblr"></i></li>
-                <li><i class="fa fa-google-plus"></i></li>
+            <div class="sign-btn">
+                <em>Sign In</em><span> or </span><em>Sign Up</em>
+            </div>
+        </section>
+        <section class="products-area">
+            <h1>Potions</h1>
+            <ul>
+                <li>
+                    <figure class="product-box">
+                        <img src="images/aging-potion.png">
+                        <div>
+                            <strong class="product-name">Aging Potion -</strong>
+                            <p class="product-price"> $29.99</p>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="product-box">
+                        <img src="images/aging-potion.png">
+                        <div>
+                            <strong class="product-name">Aging Potion -</strong>
+                            <p class="product-price"> $29.99</p>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="product-box">
+                        <img src="images/aging-potion.png">
+                        <div>
+                            <strong class="product-name">Aging Potion -</strong>
+                            <p class="product-price"> $29.99</p>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="product-box">
+                        <img src="images/aging-potion.png">
+                        <div>
+                            <strong class="product-name">Aging Potion -</strong>
+                            <p class="product-price"> $29.99</p>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="product-box">
+                        <img src="images/aging-potion.png">
+                        <div>
+                            <strong class="product-name">Aging Potion -</strong>
+                            <p class="product-price"> $29.99</p>
+                        </div>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="product-box">
+                        <img src="images/aging-potion.png">
+                        <div>
+                            <strong class="product-name">Aging Potion -</strong>
+                            <p class="product-price"> $29.99</p>
+                        </div>
+                    </figure>
+                </li>
             </ul>
-            <p>© 2015 Merlin's Potions. All Rights Reserved</p>
         </section>
-        <section class="signature-area">
-            <em>Sign up for our Newsletter</em>
-            <p>Sign up for our newsletter & get exclusive discounts!</p>
-            <form>
-                <input type="email" placeholder="Enter your email">
-                <button>submit</button>
-            </form>
-        </section>
-    </footer>
+        <footer>
+            <section class="info-area">
+                <ul class="navigation-links">
+                    <li>company</li>
+                    <li>contact us</li>
+                    <li>shipping</li>
+                    <li>returns</li>
+                    <li>careers</li>
+                </ul>
+                <ul class="social-medias">
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-pinterest"></i></li>
+                    <li><i class="fa fa-tumblr"></i></li>
+                    <li><i class="fa fa-google-plus"></i></li>
+                </ul>
+                <p>© 2015 Merlin's Potions. All Rights Reserved</p>
+            </section>
+            <section class="signature-area">
+                <em>Sign up for our Newsletter</em>
+                <p>Sign up for our newsletter & get exclusive discounts!</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button>submit</button>
+                </form>
+            </section>
+        </footer>
     </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
-
+    <div id="overlay-back"></div>
+        <section class="lightbox">
+            <div class="lightbox-wrapper">
+                <figure><img src="images/aging-potion.png"></figure>
+                <aside>
+                <h2>Product Name</h2>
+                    <p></p>
+                <h2>Use/Effect</h2>
+                    <p></p>
+                <h2>Ingredients</h2>
+                    <p></p>
+                <h2>Price</h2>
+                    <p></p>
+                <button id="add-to-cart">add to cart</button>
+                </aside>
+                <span id="close-lightbox">X</span>
+            </div>
+        </section>
 </body>
 </html>
