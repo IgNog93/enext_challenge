@@ -122,3 +122,16 @@
     z-index: 10;
     display: flex;
 }
+
+#add-to-cart {
+    background-color: $main-red-orange;
+    color: #FFFFFF;
+
+    height: 34px;
+    width: 150px;
+    margin-left: 10px;
+    
+    border-radius: 5px;
+    border: 0px;
+    text-transform: uppercase;
+}

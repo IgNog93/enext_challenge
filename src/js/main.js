@@ -1,6 +1,8 @@
 window.onload = function() {
     
+    //
     // Displaying Lightbox //
+    //
 
     function lightboxOn(){
         $('#overlay-back').fadeIn(100);
@@ -10,11 +12,21 @@ window.onload = function() {
         $(".lightbox-wrapper").css("display","flex");
     }
 
-    $("#clearance-btn").click(function(){
-        lightboxOn();
+    $.ajax({
+        url: 'https://cdn.rawgit.com/LucasRuy/1d4a5d45e2ea204d712d0b324af28bab/raw/342e0e9277be486102543c7f50ef5fcf193234b6/potions.json',
+        success: function(json) {
+            
+            $(".product-box").click(function(){
+                lightboxOn();
+                $(".product-name-lightbox").empty();
+                $(".product-name-lightbox").append("<p>"+json.potions[1].name+"</p>");
+            }); 
+        }
     });
 
+    //
     // Hiding Lightbox //
+    //
 
     function lightboxOff(){
         $(".lightbox-wrapper").toggleClass("lightbox-on");
@@ -27,7 +39,9 @@ window.onload = function() {
         lightboxOff();
     });
 
+    //
     // Cart items counter //
+    //
 
     var cartItems = 0;
 
@@ -40,4 +54,4 @@ window.onload = function() {
         lightboxOff();
         
     });
-}
+};
