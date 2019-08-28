@@ -8,14 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
     <title>Merlin's Potions</title>
 </head>
 <body>
     <div class="content">
         <header class="header-desktop">
             <figure class="main-logo">
-                <img src="../images/logo-desktop.jpg">
+                <img src="images/logo-desktop.jpg" alt="logo">
             </figure>
             <div class="search-field">
                 <span class="fa fa-search"></span>
@@ -25,19 +24,19 @@
                 <em><strong>Free shipping</strong><br>on orders over $50</em>
                 <div class="cart-counter">
                     <figure>
-                        <img src="../images/cart-icon.png">
+                        <img src="../images/cart-icon.png" alt="cart-icon">
                     </figure>
                     <strong>bag:<span id="cart-items-qty"></span></strong>
                 </div>
             </div>
         </header>
-        <section class="navigation-area">
+        <section class="navigation-area fa">
             <ul>
-                <li>potions</li>
-                <li>ingredients</li>
-                <li>books</li>
-                <li>supplies</li>
-                <li>charms</li>
+                <li>potions<span>&#xf0d7;</span></li>
+                <li>ingredients<span>&#xf0d7;</span></li>
+                <li>books<span>&#xf0d7;</span></li>
+                <li>supplies<span>&#xf0d7;</span></li>
+                <li>charms<span>&#xf0d7;</span></li>
                 <li id="clearance-btn">clearance!</li>
             </ul>
             <div class="sign-btn">
@@ -49,7 +48,7 @@
             <ul>
                 <li>
                     <figure class="product-box">
-                        <img src="images/aging-potion.png">
+                        <img src="images/aging-potion.png" alt="aging-potion">
                         <div>
                             <strong class="product-name">Aging Potion -</strong>
                             <p class="product-price"> $29.99</p>
@@ -58,7 +57,7 @@
                 </li>
                 <li>
                     <figure class="product-box product-box-2">
-                        <img src="images/bulgeye-potion.png">
+                        <img src="images/bulgeye-potion.png" alt="bulgeye-potion">
                         <div>
                             <strong class="product-name">Bulgeye Potion -</strong>
                             <p class="product-price"> $19.99</p>
@@ -67,7 +66,7 @@
                 </li>
                 <li>
                     <figure class="product-box">
-                        <img src="images/dragon-tonic.png">
+                        <img src="images/dragon-tonic.png" alt="dragon-tonic">
                         <div>
                             <strong class="product-name">Dragon Tonic -</strong>
                             <p class="product-price"> $64.99</p>
@@ -76,7 +75,7 @@
                 </li>
                 <li>
                     <figure class="product-box">
-                        <img src="images/love-potion.png">
+                        <img src="images/love-potion.png" alt="love-potion">
                         <div>
                             <strong class="product-name">Love Potion -</strong>
                             <p class="product-price"> $29.99</p>
@@ -85,7 +84,7 @@
                 </li>
                 <li>
                     <figure class="product-box">
-                        <img src="images/polyjuice-potion.png">
+                        <img src="images/polyjuice-potion.png" alt="polyjuice-potion">
                         <div>
                             <strong class="product-name">Polyjuice Potion -</strong>
                             <p class="product-price"> $99.99</p>
@@ -94,7 +93,7 @@
                 </li>
                 <li>
                     <figure class="product-box">
-                        <img src="images/sleeping-draught.png">
+                        <img src="images/sleeping-draught.png" alt="sleeping-draught">
                         <div>
                             <strong class="product-name">Sleeping Draught -</strong>
                             <p class="product-price"> $14.99</p>
@@ -135,21 +134,22 @@
     <div id="overlay-back"></div>
     <section class="lightbox">
         <div class="lightbox-wrapper">
-            <figure><img src="images/aging-potion.png"></figure>
+            <figure class="image-lightbox"></figure>
             <aside>
-            <h2>Product Name</h2>
-            <p class="product-name-lightbox"></p>
+            <h2 class="product-name-lightbox"></h2>
             <h2>Use/Effect</h2>
-                <p></p>
+                <p class="effects-lightbox"></p>
             <h2>Ingredients</h2>
-                <p></p>
+                <p class="ingredients-lightbox"></p>
             <h2>Price</h2>
-                <p></p>
+                <p class="price-lightbox"></p>
             <button id="add-to-cart">add to cart</button>
             </aside>
             <span id="close-lightbox">X</span>
         </div>
     </section>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>

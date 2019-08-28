@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function() {    
     
     //
     // Displaying Lightbox //
@@ -12,14 +12,35 @@ window.onload = function() {
         $(".lightbox-wrapper").css("display","flex");
     }
 
+    //
+    // Consuming Potions API //
+    //
+
     $.ajax({
         url: 'https://cdn.rawgit.com/LucasRuy/1d4a5d45e2ea204d712d0b324af28bab/raw/342e0e9277be486102543c7f50ef5fcf193234b6/potions.json',
         success: function(json) {
-            
-            $(".product-box").click(function(){
+            console.log(json);
+            $('.products-area ul li').click(function(){
+                
+                var index = $(this).index() + 1;
+                console.log(index);
+
                 lightboxOn();
+
+                $(".image-lightbox").empty();
+                $(".image-lightbox").append("<img src=images/"+json.potions[index].image+"></img>");
+
                 $(".product-name-lightbox").empty();
-                $(".product-name-lightbox").append("<p>"+json.potions[1].name+"</p>");
+                $(".product-name-lightbox").append("<p>"+json.potions[index].name+"</p>");
+
+                $(".effects-lightbox").empty();
+                $(".effects-lightbox").append("<p>"+json.potions[index].effect+"</p>");
+
+                $(".ingredients-lightbox").empty();
+                $(".ingredients-lightbox").append("<p>"+json.potions[index].ingredients+"</p>");
+
+                $(".price-lightbox").empty();
+                $(".price-lightbox").append("<p>"+json.potions[index].price+"</p>");
             }); 
         }
     });

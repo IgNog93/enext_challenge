@@ -8,6 +8,7 @@
     height: 7.5%;
     background-color: $main-purple;
     color: #FFFFFF;
+    font-size: 1rem;
 
     ul{
         display: flex;
@@ -15,16 +16,25 @@
         align-items: center;
         
         li{
-            margin: 0px 20px;
+            margin: 0px 15px;
             font-style: italic;
             text-transform: capitalize;
+
+            span{
+                font-style: initial;
+                margin-left: 10px;
+            }
         }
     }
 }
 
 .sign-btn{
-    margin-left: 10%;
-    margin-right: 100px;
+    margin-left: 5%;
+    margin-right: 80px;
+
+    span {
+        opacity: 0.3;
+    }
 }
 
 #clearance-btn{

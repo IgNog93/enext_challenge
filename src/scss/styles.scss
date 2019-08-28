@@ -3,3 +3,13 @@
 @import "navigation";
 @import "home";
 @import "footer";
+
+/*
+// Just to hide mobile version - not finished.
+*/
+
+@media (max-width: 1023px) {
+    body {
+      display: none;
+    }
+}
