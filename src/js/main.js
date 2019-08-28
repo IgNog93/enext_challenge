@@ -28,7 +28,7 @@ window.onload = function() {
                 lightboxOn();
 
                 $(".image-lightbox").empty();
-                $(".image-lightbox").append("<img src=src/images/"+json.potions[index].image+"></img>");
+                $(".image-lightbox").append("<img src='src/images/"+json.potions[index].image+"'></img>");
 
                 $(".product-name-lightbox").empty();
                 $(".product-name-lightbox").append("<p>"+json.potions[index].name+"</p>");
